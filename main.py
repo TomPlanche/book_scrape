@@ -1,3 +1,4 @@
+
 import requests
 from bs4 import BeautifulSoup
 import csv
@@ -5,7 +6,7 @@ import time
 from tqdm import tqdm
 
 start = time.time()
-with open('tout.csv', 'w', encoding = 'utf-8') as csv_file:
+with open('all.csv', 'w', encoding = 'utf-8') as csv_file:
     write_csv = csv.writer(csv_file, delimiter = ',')
     write_csv.writerow(['product_page_url', 'universal_product_code (upc)', 'title', 'price_including_tax',
                         'price_excluding_tax', 'number_avaliable', 'category', 'review_rating', 'image_url',
